@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="globalStyle.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/hero.css">
 </head>
 <body>
-    <section id="header">
-        <a href="#"><img src="img/logo.png" class= "logo" alt="Cara"></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="Pages/shop.html">Shop</a></li>
-                <li><a href="Pages/blog.html">Blog</a></li>
-                <li><a href="Pages/about.html">About</a></li>
-                <li><a href="Pages/contact.html">Contact</a></li>
-                <li><a href="Pages/cart.html"><i class="far fa-shopping-bag"></i></a></li>
-            </ul>
-        </div>
+    <section id="header"> 
     </section>
+    <section id = "hero">
+        
+    </section>
+    <script type="module">
+        import header from  "./Components/header.js";
+        import hero from "./Components/hero.js";
+        let headerr = document.getElementById("header");
+        let heroo = document.getElementById("hero");
+        heroo.innerHTML = hero();
+        headerr.innerHTML = header();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
