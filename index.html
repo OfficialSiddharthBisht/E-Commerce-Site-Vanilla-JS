@@ -9,20 +9,27 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="Styles/navbar.css">
     <link rel="stylesheet" href="Styles/hero.css">
+    <link rel="stylesheet" href="Styles/feature.css">
 </head>
 <body>
-    <section id="header"> 
-    </section>
-    <section id = "hero">
-        
-    </section>
+    <!-- * Header Section-->
+    <section id="header"></section>
+
+    <!-- *Hero Section-->
+    <section id = "hero"></section>
+
+    <!-- *Feature Section -->
+    <section id = "feature" class="section-p1"></section>
     <script type="module">
         import header from  "./Components/header.js";
         import hero from "./Components/hero.js";
+        import feature from "./Components/feature.js";
         let headerr = document.getElementById("header");
         let heroo = document.getElementById("hero");
+        let featuree = document.getElementById("feature");
         heroo.innerHTML = hero();
         headerr.innerHTML = header();
+        featuree.innerHTML = feature();
     </script>
     <script src="script.js"></script>
 </body>
