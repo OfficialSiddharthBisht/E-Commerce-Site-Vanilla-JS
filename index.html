@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Styles/navbar.css">
     <link rel="stylesheet" href="Styles/hero.css">
     <link rel="stylesheet" href="Styles/feature.css">
+    <link rel="stylesheet" href="Styles/product.css">
 </head>
 <body>
     <!-- * Header Section-->
@@ -20,16 +21,22 @@
 
     <!-- *Feature Section -->
     <section id = "feature" class="section-p1"></section>
+    <!-- Product Section -->
+    <section id = "products" class="section-p1"></section>
+    
     <script type="module">
         import header from  "./Components/header.js";
         import hero from "./Components/hero.js";
         import feature from "./Components/feature.js";
+        import products from "./Components/products.js";
         let headerr = document.getElementById("header");
         let heroo = document.getElementById("hero");
         let featuree = document.getElementById("feature");
+        let productss = document.getElementById("products");
         heroo.innerHTML = hero();
         headerr.innerHTML = header();
         featuree.innerHTML = feature();
+        productss.innerHTML = products();
     </script>
     <script src="script.js"></script>
 </body>
